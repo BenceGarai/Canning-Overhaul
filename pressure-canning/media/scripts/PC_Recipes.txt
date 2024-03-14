@@ -1,0 +1,14 @@
+module Base 
+{
+    recipe Make Pressure Canner
+	{
+	   WristWatch_Right_DigitalBlack/WristWatch_Right_DigitalRed/WristWatch_Right_DigitalDress,
+       Pot/WaterPot,
+	   keep [Recipe.GetItemTypes.Screwdriver],
+
+	   Result:PressureCanner,
+	   Sound:Hammering,
+	   Time:50.0,
+	   Category:Cooking,
+	}
+}

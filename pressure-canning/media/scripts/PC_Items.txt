@@ -1,0 +1,42 @@
+module Base 
+{
+    item PressureCanner
+	{
+	    DisplayCategory = Cooking,
+		Weight	=	1,
+		CanStoreWater	=	TRUE,
+		Type	=	Normal,
+		DisplayName	=	Pressure Canner,
+		ReplaceOnUseOn	=	WaterSource-WaterPressureCanner,
+		Icon	=	PressureCanner,
+		MetalValue = 40,
+		RainFactor = 1,
+		Tooltip = Tooltip_item_RainFromGround, 
+		StaticModel = PressureCanner,
+		WorldStaticModel = PressureCanner_Ground,
+	}
+
+    item WaterPressureCanner
+    {
+        DisplayName             = Pressure Canner with Water,
+        DisplayCategory         = Water,
+        Type                    = Drainable,
+        Weight                  = 3,
+        Icon                    = PressureCanner_Water,
+        CanStoreWater           = TRUE,
+        EatType                 = Pot,
+        FillFromDispenserSound  = GetWaterFromDispenserMetalBig,
+        FillFromTapSound        = GetWaterFromTapMetalBig,
+        IsCookable              = TRUE,
+        IsWaterSource           = TRUE,
+        RainFactor              = 1,
+        ReplaceOnDeplete        = PressureCanner,
+        ReplaceOnUseOn          = WaterSource-WaterPressureCanner,
+        Tooltip                 = Tooltip_item_RainFromGround,
+        UseDelta                = 0.04,
+        UseWhileEquipped        = FALSE,
+        StaticModel             = PressureCanner,
+        WorldStaticModel        = PressureCanner_Ground,
+        Tags                    = HasMetal,
+    }
+}
