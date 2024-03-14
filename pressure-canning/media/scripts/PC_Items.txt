@@ -1,5 +1,6 @@
 module Base 
 {
+    /******************Pressure Canner******************/
     item PressureCanner
 	{
 	    DisplayCategory = Cooking,
@@ -51,5 +52,159 @@ module Base
         StaticModel             = CookingPot,
         WorldStaticModel        = PressureCanner,
         Tags                    = HasMetal,
+    }
+
+    /******************Override for vanilla canned items******************/
+    item CannedTomato
+	{
+	    DisplayCategory     =       Food,
+		Type				=		Food,
+		DisplayName			=		Jar of Tomatoes,
+		Icon				=		JarBrown,
+		Weight				=		0.2,
+		DaysFresh 			=		360,
+		DaysTotallyRotten 	=	 	400,
+		OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodTomatoes_Ground,
+	}
+
+	item CannedCarrots
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Carrots,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+        IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodCarrots_Ground,
+    }
+
+	item CannedPotato
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Potatoes,
+        Icon				=		JarWhite,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodPotatoes_Ground,
+    }
+
+	item CannedEggplant
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Eggplants,
+        Icon				=		JamPurple,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodEggplants_Ground,
+    }
+
+	item CannedLeek
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Leeks,
+        Icon				=		JarWhite,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodLeeks_Ground,
+    }
+
+	item CannedRedRadish
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Red Radishes,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodRadish_Ground,
+    }
+
+	item CannedBellPepper
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Bell Peppers,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodBellPeppers_Ground,
+    }
+
+	item CannedCabbage
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Cabbage,
+        Icon				=		JarGreen,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodCabbage_Ground,
+    }
+
+    item CannedBroccoli
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Broccoli,
+        Icon				=		JarGreen,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        OnCooked            =       JarredFood_OnCooked,
+		IsCookable	        =	    TRUE,
+        MinutesToBurn	    =	    360,
+        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodBroccoli_Ground,
     }
 }
