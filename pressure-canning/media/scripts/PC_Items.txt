@@ -12,9 +12,22 @@ module Base
 		MetalValue = 40,
 		RainFactor = 1,
 		Tooltip = Tooltip_item_RainFromGround, 
-		StaticModel = PressureCanner,
-		WorldStaticModel = PressureCanner_Ground,
+		StaticModel = CookingPot,
+		WorldStaticModel = PressureCanner,
 	}
+
+    model PressureCanner
+	{
+		mesh = WorldItems/PressureCanner,
+		texture = WorldItems/PressureCanner,
+        scale = 0.5,
+
+        attachment world
+    {
+        offset = 0.0000 0.0000 0.0000,
+        rotate = 0.0000 0.0000 0.0000,
+     }
+    }
 
     item WaterPressureCanner
     {
@@ -35,8 +48,8 @@ module Base
         Tooltip                 = Tooltip_item_RainFromGround,
         UseDelta                = 0.04,
         UseWhileEquipped        = FALSE,
-        StaticModel             = PressureCanner,
-        WorldStaticModel        = PressureCanner_Ground,
+        StaticModel             = CookingPot,
+        WorldStaticModel        = PressureCanner,
         Tags                    = HasMetal,
     }
 }
