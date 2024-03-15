@@ -24,10 +24,10 @@ module Base
         scale = 0.4,
 
         attachment world
-    {
-        offset = 0.0000 0.0000 0.0000,
-        rotate = 0.0000 0.0000 0.0000,
-     }
+        {
+            offset = 0.0000 0.0000 0.0000,
+            rotate = 0.0000 0.0000 0.0000,
+        }
     }
 
     item WaterPressureCanner
@@ -62,12 +62,8 @@ module Base
 		DisplayName			=		Jar of Tomatoes,
 		Icon				=		JarBrown,
 		Weight				=		0.2,
-		DaysFresh 			=		360,
-		DaysTotallyRotten 	=	 	400,
-		OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+		DaysFresh 			=		10,
+		DaysTotallyRotten 	=	 	15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodTomatoes_Ground,
 	}
@@ -79,12 +75,8 @@ module Base
         DisplayName			=		Jar of Carrots,
         Icon				=		JarBrown,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-        IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodCarrots_Ground,
     }
@@ -96,12 +88,8 @@ module Base
         DisplayName			=		Jar of Potatoes,
         Icon				=		JarWhite,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodPotatoes_Ground,
     }
@@ -113,12 +101,8 @@ module Base
         DisplayName			=		Jar of Eggplants,
         Icon				=		JamPurple,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodEggplants_Ground,
     }
@@ -130,12 +114,8 @@ module Base
         DisplayName			=		Jar of Leeks,
         Icon				=		JarWhite,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodLeeks_Ground,
     }
@@ -147,12 +127,8 @@ module Base
         DisplayName			=		Jar of Red Radishes,
         Icon				=		JarBrown,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodRadish_Ground,
     }
@@ -164,12 +140,8 @@ module Base
         DisplayName			=		Jar of Bell Peppers,
         Icon				=		JarBrown,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodBellPeppers_Ground,
     }
@@ -181,12 +153,8 @@ module Base
         DisplayName			=		Jar of Cabbage,
         Icon				=		JarGreen,
         Weight				=		0.2,
-        DaysFresh 			=		360,
-        DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodCabbage_Ground,
     }
@@ -198,12 +166,125 @@ module Base
         DisplayName			=		Jar of Broccoli,
         Icon				=		JarGreen,
         Weight				=		0.2,
+        DaysFresh 			=		10,
+        DaysTotallyRotten 	=	    15,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodBroccoli_Ground,
+    }
+    /************************Preserve Foods************************/
+    item PreservedCannedTomato
+	{
+	    DisplayCategory     =       Food,
+		Type				=		Food,
+		DisplayName			=		Jar of Preserved Tomatoes,
+		Icon				=		JarBrown,
+		Weight				=		0.2,
+		DaysFresh 			=		360,
+		DaysTotallyRotten 	=	 	400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodTomatoes_Ground,
+	}
+    
+    item PreservedCannedCarrot
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Carrots,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
         DaysFresh 			=		360,
         DaysTotallyRotten 	=	    400,
-        OnCooked            =       JarredFood_OnCooked,
-		IsCookable	        =	    TRUE,
-        MinutesToBurn	    =	    360,
-        MinutesToCook	    =	    60,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodCarrots_Ground,
+    }
+
+	item PreservedCannedPotato
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Potatoes,
+        Icon				=		JarWhite,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodPotatoes_Ground,
+    }
+
+	item PreservedCannedEggplant
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Eggplants,
+        Icon				=		JamPurple,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodEggplants_Ground,
+    }
+
+	item PreservedCannedLeek
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Leeks,
+        Icon				=		JarWhite,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodLeeks_Ground,
+    }
+
+	item PreservedCannedRedRadish
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Red Radishes,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodRadish_Ground,
+    }
+
+	item PreservedCannedBellPepper
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Bell Peppers,
+        Icon				=		JarBrown,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodBellPeppers_Ground,
+    }
+
+	item PreservedCannedCabbage
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Cabbage,
+        Icon				=		JarGreen,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
+        StaticModel         =       CanClosed,
+        WorldStaticModel    =       JarFoodCabbage_Ground,
+    }
+
+    item PreservedCannedBroccoli
+    {
+        DisplayCategory     =       Food,
+        Type				=		Food,
+        DisplayName			=		Jar of Preserved Broccoli,
+        Icon				=		JarGreen,
+        Weight				=		0.2,
+        DaysFresh 			=		360,
+        DaysTotallyRotten 	=	    400,
         StaticModel         =       CanClosed,
         WorldStaticModel    =       JarFoodBroccoli_Ground,
     }

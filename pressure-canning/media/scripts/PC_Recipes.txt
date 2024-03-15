@@ -29,9 +29,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Tomatoes
+    recipe Open Jar of Preserved Tomatoes
     {
-        CannedTomato,
+        PreservedCannedTomato,
 
         Result:farming.Tomato=5,
         Time:30.0,
@@ -56,9 +56,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Carrots
+    recipe Open Jar of Preserved Carrots
     {
-        CannedCarrots,
+        PreservedCannedCarrot,
 
         Result:Carrots=5,
         Time:30.0,
@@ -83,9 +83,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Potatoes
+    recipe Open Jar of Preserved Potatoes
     {
-        CannedPotato,
+        PreservedCannedPotato,
 
         Result:farming.Potato=5,
         Time:30.0,
@@ -110,9 +110,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Eggplants
+    recipe Open Jar of Preserved Eggplants
     {
-        CannedEggplant,
+        PreservedCannedEggplant,
 
         Result:Eggplant=5,
         Time:30.0,
@@ -137,9 +137,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Leeks
+    recipe Open Jar of Preserved Leeks
     {
-        CannedLeek,
+        PreservedCannedLeek,
 
         Result:Leek=5,
         Time:30.0,
@@ -164,9 +164,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Red Radishes
+    recipe Open Jar of Red Preserved Radishes
     {
-        CannedRedRadish,
+        PreservedCannedRedRadish,
 
         Result:farming.RedRadish=5,
         Time:30.0,
@@ -191,9 +191,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Bell Peppers
+    recipe Open Jar of Preserved Bell Peppers
     {
-        CannedBellPepper,
+        PreservedCannedBellPepper,
 
         Result:BellPepper=5,
         Time:30.0,
@@ -218,9 +218,9 @@ module Base
 		Override: true,
     }
 
-    recipe Open Jar of Cabbage
+    recipe Open Jar of Preserved Cabbage
     {
-        CannedCabbage,
+        PreservedCannedCabbage,
 
         Result:farming.Cabbage=3,
         Time:30.0,
@@ -245,6 +245,222 @@ module Base
 		Override: true,
     }
 
+    recipe Open Jar of Preserved Broccoli
+    {
+        PreservedCannedBroccoli,
+
+        Result:Broccoli=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+    /************************Preserve Foods************************/
+    recipe Preserve Jar of Tomatoes
+    {
+        destroy CannedTomato,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedTomato,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+        
+    recipe Preserve Jar of Carrots
+    {
+        destroy CannedCarrots,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedCarrot,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+    
+    recipe Preserve Jar of Potatoes
+    {
+        destroy CannedPotato,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedPotato,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+        
+    recipe Preserve Jar of Eggplants
+    {
+        destroy CannedEggplant,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedEggplant,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+    
+    recipe Preserve Jar of Leeks
+    {
+        destroy CannedLeek,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedLeek,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+        
+    recipe Preserve Jar of Radishes
+    {
+        destroy CannedRedRadish,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedRedRadish,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+            
+    recipe Preserve Jar of Bell Peppers
+    {
+        destroy CannedBellPepper,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedBellPepper,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+                
+    recipe Preserve Jar of Cabbage
+    {
+        destroy CannedCabbage,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedCabbage,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+                
+    recipe Preserve Jar of Broccoli
+    {
+        destroy CannedBroccoli,
+        WaterPressureCanner;1,
+        CanBeDoneFromFloor:true,
+        Result:PreservedCannedBroccoli,
+        OnCreate: Recipe.OnCreate.PreserveJarOfFood,
+        Time:100.0,
+        Heat:-0.22,
+        Category:Cooking,
+    }
+    /*Open un-preserved foods: I guess they made a mistake?*/
+    recipe Open Jar of Tomatoes
+    {
+        CannedTomato,
+
+        Result:farming.Tomato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Carrots
+    {
+        CannedCarrot,
+
+        Result:Carrots=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Potatoes
+    {
+        CannedPotato,
+
+        Result:farming.Potato=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Eggplants
+    {
+        CannedEggplant,
+
+        Result:Eggplant=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Leeks
+    {
+        CannedLeek,
+
+        Result:Leek=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Red Radishes
+    {
+        CannedRedRadish,
+
+        Result:farming.RedRadish=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Bell Peppers
+    {
+        CannedBellPepper,
+
+        Result:BellPepper=5,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
+    recipe Open Jar of Cabbage
+    {
+        CannedCabbage,
+
+        Result:farming.Cabbage=3,
+        Time:30.0,
+        OnCreate:Recipe.OnCreate.OpenJarredFood,
+        Category:Cooking,
+        OnGiveXP:Recipe.OnGiveXP.None,
+		Override: true,
+    }
+
     recipe Open Jar of Broccoli
     {
         CannedBroccoli,
@@ -256,5 +472,4 @@ module Base
         OnGiveXP:Recipe.OnGiveXP.None,
 		Override: true,
     }
-
 }
