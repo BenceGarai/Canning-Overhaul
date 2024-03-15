@@ -21,7 +21,7 @@ module Base
 	{
 		mesh = WorldItems/PressureCanner,
 		texture = WorldItems/PressureCanner,
-        scale = 0.5,
+        scale = 0.4,
 
         attachment world
     {
