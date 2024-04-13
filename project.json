@@ -1,17 +1,20 @@
 {
     "$schema": "https://raw.githubusercontent.com/Konijima/project-zomboid-studio/master/pzstudio.schema.json",
-    "title": "Pressure Canning",
-    "authors": [],
+    "title": "Canning Overhaul",
+    "authors": [
+        "Benooo",
+        "CursedCharm"
+    ],
     "workshop": {
-        "visibility": "public",
+        "visibility": "unlisted",
         "tags": [
             "Build 41"
         ],
         "excludes": []
     },
     "mods": {
-        "pressure-canning": {
-            "name": "Pressure Canning",
+        "canning-overhaul": {
+            "name": "Canning Overhaul",
             "description": ""
         }
     }
