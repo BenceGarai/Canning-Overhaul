@@ -1,3 +1,34 @@
-[h1]Canning Overhaul[/h1]
+This mod overhauls the canning process in the game aimed to make it much more useful.
 
-Mod under development...
+[h1]Features[/h1]
+[list]
+[*]Adds a craftable [b]pressure canner[/b] to aid the canning process.
+[*]Opening jars of food now returns an empty jar and a lid.
+[*]Adjusted crafting requirements for the canning process to make it viable.
+[*]Food in jars after preservation last for 1 year.
+[/list]
+
+[h1]FAQ:[/h1]
+
+[h2]Does it work on multiplayer?[/h2]
+Yes!
+[h2]Does it work on existing saves?[/h2]
+Yes! Existing canned foods will need to be rec-canned to last for 1 year.
+[h2]Is it safe to remove the mod?[/h2]
+Yes! You will [b]lose[/b] your pressure canner.
+
+[h2]Future plans:[/h2]
+[list]
+[*]Add options to increase jar and lid spawn rates.
+[/list]
+
+[h2]Release notes:[/h2]
+[list]
+[*]Initial release.
+[/list]
+
+[img]https://i.imgur.com/cKVBRWw.gif[/img]
+[url=https://ko-fi.com/benooodev][img]https://imgur.com/ULMwSUt.png[/img][/url]
+
+Workshop ID: 3221570110
+Mod ID: canning-overhaul
