@@ -11,6 +11,7 @@ module Base
 	   Sound:Hammering,
 	   Time:50.0,
 	   Category:Cooking,
+       SkillRequired: Cooking = 3,
 	}
 
 	/************************ Canning food ************************/
