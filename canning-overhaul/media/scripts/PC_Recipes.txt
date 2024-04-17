@@ -4,12 +4,12 @@ module Base
     recipe Make Pressure Canner
 	{
 	   AlarmClock2,
-       Pot/WaterPot,
+       Pot,
 	   keep [Recipe.GetItemTypes.Screwdriver],
 
 	   Result:PressureCanner,
 	   Sound:Hammering,
-	   Time:50.0,
+	   Time:100.0,
 	   Category:Cooking,
        SkillRequired: Cooking = 3,
 	}
