@@ -3,7 +3,7 @@ module Base
 	/************************ Pressure Canner ************************/
     recipe Make Pressure Canner
 	{
-	   WristWatch_Right_DigitalBlack/WristWatch_Right_DigitalRed/WristWatch_Right_DigitalDress,
+	   AlarmClock2,
        Pot/WaterPot,
 	   keep [Recipe.GetItemTypes.Screwdriver],
 
