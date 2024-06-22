@@ -380,7 +380,7 @@ module Base
 
     recipe Open Jar of Carrots
     {
-        CannedCarrot,
+        CannedCarrots,
 
         Result:Carrots=5,
         Time:30.0,
